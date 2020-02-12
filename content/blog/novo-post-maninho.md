@@ -10,6 +10,6 @@ Para criar um novo post via Netlify basta acessar a rota */admin* deste website 
 
 Em seguida você verá a tela a seguir, que serve para construir a postagem, podendo inserir texto, imagens e outros arquivos. Após finalizar a edição, basta clicar em **Publish > Publish now**
 
-![Edição de postagem](assets/Screenshot_2020-02-12 Content Manager(1).png "Editando uma nova postagem")
+![Edição de postagemm](assets/Screenshot_2020-02-12 Content Manager(1).png "Editando uma nova postagem")
 
 É fácil assim! Desta forma é possível gerenciar o conteúdo do blog com facilidade e rapidez.

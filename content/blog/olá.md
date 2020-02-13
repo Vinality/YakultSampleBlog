@@ -1,8 +1,8 @@
 ---
 path: /noticia
 date: 2020-02-13T00:18:07.910Z
-title: Testando Branch Preview
-description: Com Netlify é possível ver um preview antes de um Pull Request
+title: João e o Uno
+description: Omni e seu serviço ruim
 ---
 Olá
 

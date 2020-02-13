@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: Vinality/SampleBlogGatsby
 
-media_folder: content/assets
+media_folder: content/blog/assets
 public_folder: assets
 
 collections:

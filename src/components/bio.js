@@ -36,7 +36,7 @@ function Bio() {
             <p>
               Escrito por <strong>{author}</strong> que mora em Sorocaba e trabalha para Rocky Marketing Digital.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
+              <a href={`https://twitter.com/${social.twitter}`} style={{color: '#e5556e', textDecoration: 'none'}}>
                 Você pode segui-lo no Twitter
               </a>
             </p>

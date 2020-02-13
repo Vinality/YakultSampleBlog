@@ -69,7 +69,7 @@ class Layout extends React.Component {
         <Footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org" style={{color: '#e5556e', textDecoration: 'none'}}>Gatsby</a>
         </Footer>
       </Wrapper>
     )
@@ -78,11 +78,13 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
+  background: #35293E;
+  color: #fff;
 `
 
 const Footer = styled.footer`
   text-align: center;
-  margin: 24px;
+  padding: 24px;
 `
 
 export default Layout

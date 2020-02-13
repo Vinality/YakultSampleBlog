@@ -26,6 +26,10 @@ class IndexPage extends React.Component {
         <p>
           A página contém integração com styled components e gerenciamento de conteúdo com o Netlify
         </p>
+        <form netlify style={{display: 'flex', justifyContent: 'flex-start'}}>
+          <input placeholder='Insira seu email aqui' />
+          <Button type='submit' style={{padding: '5px 15px'}}>Enviar</Button>
+        </form>
         <Link to="/blog/">
           <Button marginTop="35px">Ir ao Blog</Button>
         </Link>

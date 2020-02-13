@@ -1,18 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from 'styled-components'
-import Layout from "../components/layout"
 
 class Submit extends React.Component {
   render() {
-    // const { data } = this.props
-    const siteTitle = "Yakult Personal Test Blog"
-
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <Container>
-          <div>
-            <h1>Obrigado!</h1>
+      <Container>
+        <Message>
+          <Content>
+            <p>Obrigado!</p>
             <p>Seu email foi enviado</p>
             <Link
                 style={{
@@ -24,23 +20,35 @@ class Submit extends React.Component {
               >
                 {'<'} Voltar
             </Link>
-          </div>
-        </Container>
-      </Layout>
+          </Content>
+        </Message>
+      </Container>
     )
   }
 }
 
+const Message = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  height: 25vh;
+  width: 40vh;
+  border-radius: 20px;
+  padding: 10vh;
+`
+
 const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    color: #000;
-    height: 25vh;
-    width: 40vh;
-    border-radius: 20px;
-    padding: 10vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #35293E;
+`
+
+const Content = styled.div`
+
 `
 
 export default Submit

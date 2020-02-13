@@ -10,4 +10,4 @@ Esse é o João. João tem 47 anos e trabalha como motorista particular. O sonho
 
 Assim como João, muitos clientes passam por problemas como esse, desde falta de informações por parte do lojista, falta de entendimento do processo de financiamento, altas taxas de juros e, como a dificuldade de locomoção até a loja, como ouvimos de um cliente que perdeu dois dias de trabalho para ajeitar a documentação necessária.
 
-![Isso é um UNO](assets/CarolPanda.png "UNO")
+![Isso é um UNO](assets/Aerofolio-Ps-Uno-Gi-85-10-SLeds-2P-4P-Preto-connectparts--5-.jpg "UNO")

@@ -3,6 +3,8 @@ path: /wallpaper
 date: 2020-02-12T14:54:21.940Z
 title: Hello World
 description: Inserir um novo post via Netlify é muito facil.
+thumbnail: "assets/Screenshot_2020-02-12ContentManager.png"
+tags: ['netlify', 'cms']
 ---
 Para criar um novo post via Netlify basta acessar a rota */admin* deste website e fazer o login via **Github** ou **Identity** e então clicar em **New Blog**
 

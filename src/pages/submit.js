@@ -18,7 +18,7 @@ class Submit extends React.Component {
                 }}
                 to={`/`}
               >
-                {'<'} Voltar
+                ← Voltar
             </Link>
           </Content>
         </Message>

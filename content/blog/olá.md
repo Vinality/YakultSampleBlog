@@ -3,6 +3,8 @@ path: /noticia
 date: 2020-02-13T00:18:07.910Z
 title: João e o Uno
 description: Omni e seu serviço ruim
+thumbnail: "assets/Aerofolio-Ps-Uno-Gi-85-10-SLeds-2P-4P-Preto-connectparts--5-.jpg"
+tags: ['misc']
 ---
 Olá
 

@@ -3,6 +3,8 @@ path: /prpreview
 date: 2020-02-13T13:02:16.552Z
 title: Usando preview de PR no Netlify
 description: É possível testar o PR antes do merge com Netlify
+thumbnail: "assets/prtest2.png" 
+tags: ['netlify']
 ---
 Ao fazer uma mudança em uma aplicação publicada pelo Netlify é possível visualizar uma versão de prévia do Pull Request antes de realizar um Merge para a Master. Dessa forma podemos testar as mudanças antes de coloca-las em produção.
 

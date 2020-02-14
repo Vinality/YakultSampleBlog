@@ -33,9 +33,10 @@ class Blog extends React.Component {
                       <Img fluid={node.frontmatter.thumbnail.childImageSharp.fluid} />
                     </div>                       
                     <TextContent>
-                      <h3 style={{marginBottom: rhythm(1 / 4), marginTop: 0}}>{title}</h3>
-                      <small>{node.frontmatter.date}</small>
-                      <p
+                      <h3 style={{marginBottom: rhythm(1 / 4), marginTop: 0, fontSize: '2.5vh'}}>{title}</h3>
+                      <small style={{fontSize: '1vh'}}>{node.frontmatter.date}</small>
+                      <p 
+                        style={{fontSize: '2vh'}}
                         dangerouslySetInnerHTML={{
                           __html: node.frontmatter.description || node.excerpt,
                         }}
@@ -76,18 +77,21 @@ const PostWrapper = styled.div`
 
 const ContentContainer = styled.div`
   display: flex;
-  /* width: 400px; */
   flex-direction: row;
+  align-items: center;
   justify-content: flex-end;
 `
 
 const TextContent = styled.div`
   /* width: 500px; */
-  max-height: 19vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-height: 15vh;
   padding: 5px 5px;
   margin-left: 10px;
   margin-right: 10px;
-  white-space: wrap;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
 `

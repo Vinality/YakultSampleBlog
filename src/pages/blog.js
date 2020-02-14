@@ -29,7 +29,9 @@ class Blog extends React.Component {
                   to={`blog${node.fields.slug}`}
                 >
                   <ContentContainer>
-                    <Img fixed={node.frontmatter.thumbnail.childImageSharp.fixed} />                       
+                    <div style={{minWidth: '10vw', maxWidth: '10vw' }}>
+                      <Img fluid={node.frontmatter.thumbnail.childImageSharp.fluid} />
+                    </div>                       
                     <TextContent>
                       <h3 style={{marginBottom: rhythm(1 / 4), marginTop: 0}}>{title}</h3>
                       <small>{node.frontmatter.date}</small>
@@ -65,7 +67,7 @@ const PostWrapper = styled.div`
   background: #e5556e;
   border-radius: 6px;
   font-weight: 600;
-  max-height: 25vh;
+  max-height: 30vh;
 
   Img {
     border-radius: 6px;
@@ -74,12 +76,14 @@ const PostWrapper = styled.div`
 
 const ContentContainer = styled.div`
   display: flex;
+  /* width: 400px; */
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
 `
 
 const TextContent = styled.div`
-  width: 300px;
+  /* width: 500px; */
+  max-height: 19vh;
   padding: 5px 5px;
   margin-left: 10px;
   margin-right: 10px;
@@ -109,8 +113,8 @@ export const pageQuery = graphql`
             tags
             thumbnail {
               childImageSharp {
-                fixed(width: 200, height: 200) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 2000, maxHeight: 2000) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

@@ -6,6 +6,7 @@ description: >-
   Esta descrição vai ser enorme de propósito para testar o overflow do texto
   dentro do container e por isso eu bla bla bla descrição grande demais uau
 thumbnail: assets/graph.png
+tags: ['misc']
 ---
 Basta adicionar ao frontmatter da query do blog a propriedade thumbnail e inserir o caminho em cada post para a respectiva thumbnail.
 

@@ -7,7 +7,7 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Yakult Personal Test Blog"
+    const siteTitle = "Yakult Blog"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

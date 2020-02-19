@@ -10,26 +10,20 @@ class Layout extends React.Component {
   
     return (
       <>
-        <Header>
-          <HeaderContainer>
-            <h1 style={{margin: '0 0', fontSize: '2.5vh'}}>
-              {title}
-            </h1>
+        <HeaderContainer>
+          <HeaderWrapper>
+            <TitleBar>
+              <Link to='/blog' style={{ boxShadow: 'none', color: '#fff' }}>
+                {title}
+              </Link>
+            </TitleBar>
             <MainNav>
-              <ul>
-                <li>
-                  <CustomLink to="/">Home &nbsp;</CustomLink>
-                </li>
-                <li>
-                  <CustomLink to="/blog">Artigos &nbsp;</CustomLink>
-                </li>
-                <li>
-                  <CustomLink to="#">Sobre &nbsp;</CustomLink>
-                </li>
-              </ul>
+              <CustomLink to='/'>Home</CustomLink>
+              <CustomLink to='/blog'>Artigos</CustomLink>
+              <CustomLink to='/'>Sobre</CustomLink>
             </MainNav>
-          </HeaderContainer>
-        </Header>
+          </HeaderWrapper>
+        </HeaderContainer>
         <Wrapper>
           <div
             style={{
@@ -39,7 +33,7 @@ class Layout extends React.Component {
               padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             }}
           >
-            <main>{children}</main>
+            <main style={{marginTop: '3.8rem'}}>{children}</main>
           </div>
           <Footer>
             © {new Date().getFullYear()}, Built with
@@ -63,41 +57,49 @@ const Footer = styled.footer`
   padding: 24px;
 `
 
-const Header = styled.header`
-  display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-wrap: wrap;
-`
-
 const HeaderContainer = styled.div`
-  height: 10vh;
-  display: flex;
   background: #e5556e;
   color: #fff;
-	align-items: center;
-	justify-content: space-around;
-	flex-wrap: wrap;
-  width: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .75rem;
+  box-shadow: 0 0 .5rem
+  rgba(0,0,0,.05);
+`
+
+const HeaderWrapper = styled.div`
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  z-index: 21;
+`
+
+const MainNav = styled.div` 
+  display: flex;
+  flex: 0 0 20em;
+  align-items: center;
+  text-align: center;
+  pointer-events: all;
 `
 
 const CustomLink = styled(Link)`
-  font-size: 1.4em;
-  font-weight: bold; 
+  font-size: 1.2em;
+  font-weight: 900; 
   color: #fff;
   box-shadow: none;
+  flex: 2;
+  text-transform: uppercase;
 `
 
-const MainNav = styled.nav` 
-  ul {
-    margin: 1em 0 .5em;
-	  text-align: center;
-  }
-
-  li {
-    font-size: '2vh';
-    display: inline;
-  }
+const TitleBar = styled.h1`
+  display: flex;
+  margin: 0 0;
+  font-size: 2vh;
+  flex: 2;
+  align-items: center;
 `
 
 export default Layout

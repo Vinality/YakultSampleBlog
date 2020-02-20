@@ -31,7 +31,7 @@ class IndexPage extends React.Component {
           <input type='email' name='email' placeholder='Insira seu email aqui' />
           <Button type='submit' style={{padding: '5px 15px'}}>Enviar</Button>
         </form>
-        <Link to="/blog/">
+        <Link to="/blog">
           <Button marginTop="35px">Ir ao Blog</Button>
         </Link>
       </Layout>

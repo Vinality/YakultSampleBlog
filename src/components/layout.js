@@ -6,8 +6,8 @@ import { rhythm } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { title, children } = this.props
-  
+    const { title, children, location } = this.props
+    console.log(location)
     return (
       <>
         <HeaderContainer>
@@ -18,9 +18,9 @@ class Layout extends React.Component {
               </Link>
             </TitleBar>
             <MainNav>
-              <CustomLink to='/'>Home</CustomLink>
-              <CustomLink to='/blog'>Artigos</CustomLink>
-              <CustomLink to='/'>Sobre</CustomLink>
+              <CustomLink to='/' path={location.pathname}>Home</CustomLink>
+              <CustomLink to='/blog' path={location.pathname}>Artigos</CustomLink>
+              <CustomLink to='/sobre' path={location.pathname}>Sobre</CustomLink>
             </MainNav>
           </HeaderWrapper>
         </HeaderContainer>
@@ -83,12 +83,31 @@ const MainNav = styled.div`
   align-items: center;
   text-align: center;
   pointer-events: all;
+
+  @media(max-width: 768px) {
+    flex: 0 0 18em;  
+  }
 `
 
 const CustomLink = styled(Link)`
+
+  &:hover {
+    opacity: 0.8;
+    background: #fff;
+    color:  #e5556e;
+  }
+
+  ${(props) => props.path === props.to ? `
+    opacity: 0.8;
+    background: #fff;
+    color:  #e5556e;
+  ` : `
+    color: #fff;
+  `}
+
+  transition: opacity 0.2s;
   font-size: 1.2em;
   font-weight: 900; 
-  color: #fff;
   box-shadow: none;
   flex: 2;
   text-transform: uppercase;

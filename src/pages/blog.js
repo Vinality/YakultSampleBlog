@@ -1,13 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import styled from "styled-components"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Button from "../components/button"
-import Img from 'gatsby-image'
 
 import {
   Card,
@@ -68,7 +66,6 @@ export default Blog
 const MyCard = mStyled(Card)({
   minWidth: '35vw',
   maxWidth: '35vw',
-  // width: '15vw',
   margin: 10,
   background: '#28202e',
   color: '#fff',
@@ -77,9 +74,6 @@ const MyCard = mStyled(Card)({
 const MyCardContent = mStyled(CardContent)({
   minHeight: '8vh',
   maxHeight: '8vh',
-  // display: 'flex',
-  // flexDirection: 'column',
-  // justifyContent: 'space-between'
 })
 
 export const pageQuery = graphql`
